@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #0A0F0D; /* Dark greenish-gray for primary elements */
+    --background-color: #121212; /* Deep dark gray */
+    --text-color: #E0E0E0; /* Light gray for text, ensures good readability */
+    --link-color: #BB86FC; /* Light purple for links, provides better visibility */
+    --font-primary: 'Roboto', sans-serif;
+}
+
+
+.no-top-margin {
+    margin-top: 0 !important; /* Only use !important as a last resort */
+}
+
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color); /* Ensure the body takes this color */
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Additional resets for common elements that may have default margins */
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+}
+
+/* Ensure sections stretch to the edges */
+.container, .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #1C1C1E; /* Slightly lighter shade for hero section */
+    padding: 40px;
+    text-align: center;
+}
+
+.project, .project-iframe, section {
+    background-color: #242424; /* Dark gray, a bit lighter than the body for subtle contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px; /* Adjusted size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    background-color: #333; /* Dark background for form elements */
+    color: var(--text-color);
+    border: 1px solid #444; /* Subtle borders for form elements */
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+section{
+    color: lightgray;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #hero, .project, section {
+        padding: 20px;
+    }
+}

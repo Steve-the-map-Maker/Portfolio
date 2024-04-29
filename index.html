@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Lantz - GIS Web Developer</title>
+    <link rel="stylesheet" href="/Portfolio/style.css">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Changed navbar-light to navbar-dark for better visibility -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero">Steve Lantz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="container no-top-margin">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="/Portfolio/profilePic.jpeg" alt="Steve Lantz" class="profile-pic img-fluid rounded-circle">
+                </div>
+                <div class="col-md-9">
+                    <h1>Steve Lantz</h1>
+                    <p class="lead">GIS Web Developer</p>
+                    <p>Builder of interactive web maps to explore city dynamics.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="project">
+            <iframe src="https://steve-the-map-maker.github.io/PortlandByAge/" class="project-iframe" style="min-width: 100%; height: 500px; border: none;"></iframe>
+            <div class="project-links">
+                <a href="https://steve-the-map-maker.github.io/PortlandByAge/" class="btn btn-secondary">Live Demo</a>
+                <a href="https://github.com/Steve-the-map-Maker/PortlandByAge" class="btn btn-secondary">GitHub Repo</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi there! I'm Steve Lantz, a GIS Web Developer specializing in JavaScript and Open Source technologies...</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Steve Lantz. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
